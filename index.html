@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .calender-body{
+        display: grid;
+        width: 60%;
+        height: 100%;
+        margin:auto;
+        border-radius: 20px;
+    }
+
+    .calender-weekDays{
+        display: grid;
+        padding: 1%;
+        column-gap: 5%;
+        font-size: 1.5em;
+        text-align: center;
+        color: black;
+        grid-template-columns: repeat(7, 1fr);
+        border: solid grey 6px;
+        text-decoration-line: underline;        
+    }
+
+    .calender-monthDays{
+        display: grid;
+        padding: 10%;
+        column-gap: 4%;
+        row-gap: 2%;
+        font-size: 1.5em;
+        text-align: center;
+        color: green;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: black;
+        row-gap: 50px;
+        column-gap: 100px;
+        font-size: 20px;
+        text-decoration-line: underline;        
+
+    
+    }
+
+    .monthName{
+        color: black;
+        padding: 0;
+        width: 50%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 2em;
+        padding: 5%;
+        margin-bottom: -2%;
+        text-align: center;
+        background-color: black;
+        width: 50%;
+        margin:auto;
+        color: green;
+        text-decoration-line: underline;
+    }
+
+    .prevMonth{
+        color: black;
+        padding: 15px 32px;
+        font-size: 16px;
+        border: solid black 2px;
+        width: 50%;
+    }
+
+    .nextMonth{
+        padding: 15px;
+        font-size: 16px;
+        border: solid black 2px;
+        width: 50%;
+        margin-left: 450px;
+        margin-top: -52px;
+    }
+
+    .prev-date, .next-date{
+        opacity: 0.5;
+    }
+
+</style>
+<body>
+    <div class ="monthname">
+        <h1> </h1>
+    </div>
+
+    <div class ="calender-body">
+        <div class="calender-weekDays">
+        </div>
+        <div class="calender-monthDays">
+        </div>
+        <button type="button" class="prevMonth">
+            Prev 
+        </button>
+        <button type="button" class="nextMonth">
+            Next Month 
+        </button>
+    </div>
+</body>
+<script src="newfilejs.js"></script>
+</html>
